@@ -5,7 +5,7 @@ import '../models/user.dart';
 import '../theme.dart';
 
 class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+  const ProfileScreen({super.key});
 
   static const String instagramUrl = 'https://www.instagram.com/shujahaiderr';
   static const String githubUrl = 'https://github.com/shujahaider21';

@@ -4,7 +4,7 @@ import '../models/user.dart';
 import '../theme.dart';
 
 class AboutScreen extends StatelessWidget {
-  const AboutScreen({Key? key}) : super(key: key);
+  const AboutScreen({super.key});
 
   Widget _sectionTitle(String text, Color color) => Padding(
     padding: const EdgeInsets.symmetric(vertical: 6),
@@ -66,14 +66,9 @@ class AboutScreen extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             _sectionTitle('Hobbies', color),
-            ...demoUser.hobbies
-                .map(
-                  (h) => ListTile(
-                    leading: const Icon(Icons.check),
-                    title: Text(h),
-                  ),
-                )
-                .toList(),
+            ...demoUser.hobbies.map(
+              (h) => ListTile(leading: const Icon(Icons.check), title: Text(h)),
+            ),
             const SizedBox(height: 24),
             Center(
               child: ElevatedButton(
@@ -95,8 +90,9 @@ class AboutScreen extends StatelessWidget {
           BottomNavigationBarItem(icon: Icon(Icons.info), label: 'About'),
         ],
         onTap: (index) {
-          if (index == 0)
+          if (index == 0) {
             Navigator.pushNamedAndRemoveUntil(context, '/home', (r) => false);
+          }
           if (index == 1) Navigator.pushNamed(context, '/profile');
         },
       ),

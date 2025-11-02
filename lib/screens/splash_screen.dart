@@ -3,7 +3,7 @@ import '../widgets/neon_background.dart';
 import '../widgets/neon_button.dart';
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   void _enterApp(BuildContext context) =>
       Navigator.pushReplacementNamed(context, '/home');

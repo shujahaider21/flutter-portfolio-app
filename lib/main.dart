@@ -10,7 +10,7 @@ void main() {
 }
 
 class MyProfileApp extends StatelessWidget {
-  const MyProfileApp({Key? key}) : super(key: key);
+  const MyProfileApp({super.key});
 
   @override
   Widget build(BuildContext context) {

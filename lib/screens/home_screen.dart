@@ -5,7 +5,7 @@ import '../theme.dart';
 import '../models/user.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   void _goProfile(BuildContext context) =>
       Navigator.pushNamed(context, '/profile');
