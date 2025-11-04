@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../widgets/neon_background.dart';
 import '../widgets/neon_button.dart';
 import '../theme.dart';
-import '../models/user.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
